@@ -11,7 +11,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Junior Level",
       pay: "$65/hour",
-      location: "Menlo Park, USA"
+      location: "Menlo Park, USA",
+      link:"https://www.meta.com",
     },
     {
       brandLogo: "https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg",
@@ -21,7 +22,9 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$70/hour",
-      location: "Hyderabad, India"
+      location: "Hyderabad, India", 
+      link:"https://www.amazon.com",
+
     },
     {
       brandLogo: "https://substackcdn.com/image/fetch/$s_!G1lk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg",
@@ -31,7 +34,8 @@ const App = () => {
       tag1: "Part Time",
       tag2: "Senior Level",
       pay: "$90/hour",
-      location: "Cupertino, USA"
+      location: "Cupertino, USA",
+      link:"https://www.apple.com",
     },
     {
       brandLogo: "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456",
@@ -41,7 +45,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Senior Level",
       pay: "$110/hour",
-      location: "Los Gatos, USA"
+      location: "Los Gatos, USA",
+      link:"https://www.netflix.com",
     },
     {
       brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png",
@@ -51,7 +56,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$85/hour",
-      location: "Bangalore, India"
+      location: "Bangalore, India",
+      link:"https://www.google.com",
     },
     {
       brandLogo: "https://download.logo.wine/logo/Microsoft_Store/Microsoft_Store-Logo.wine.png",
@@ -61,7 +67,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Junior Level",
       pay: "$75/hour",
-      location: "Redmond, USA"
+      location: "Redmond, USA",
+      link:"https://www.microsoft.com",
     },
     {
       brandLogo: "https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-1967.jpg?width=672&height=454&name=ibm-logo-1967.jpg",
@@ -71,7 +78,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Senior Level",
       pay: "$95/hour",
-      location: "New York, USA"
+      location: "New York, USA",
+      link:"https://www.ibm.com",
     },
     {
       brandLogo: "https://www.pngplay.com/wp-content/uploads/13/Tesla-Logo-PNG-HD-Quality.png",
@@ -81,7 +89,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$80/hour",
-      location: "Austin, USA"
+      location: "Austin, USA",
+      link:"https://www.tesla.com",
     },
     {
       brandLogo: "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/logo-and-brand/nvidia-og-image-white-bg-1200x630.jpg",
@@ -91,7 +100,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Senior Level",
       pay: "$120/hour",
-      location: "Santa Clara, USA"
+      location: "Santa Clara, USA",
+      link:"https://www.nvidia.com",
     },
     {
       brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOVjTWaheo4E99cgYZ6y14tpsgHlm0VN8Hw&s",
@@ -101,7 +111,8 @@ const App = () => {
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$70/hour",
-      location: "Mumbai, India"
+      location: "Mumbai, India",
+      link:"https://www.oracle.com",
     }
   ];
 
@@ -110,7 +121,7 @@ const App = () => {
     <div className='parent'>
       {jobOpenings.map(function (elem, idx) {
         return <div key={idx}>
-          <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} />
+          <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} link={elem.link}/>
         </div>
       })}
     </div>

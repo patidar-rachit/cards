@@ -22,8 +22,13 @@ const Card = (props) => {
                     <h3>{props.pay}</h3>
                     <p>Mumbai, India</p>
                 </div>
-                <button>Apply Now</button>
+                <div>
+                    <a href={props.link} target="_blank">
+                    <button>Apply</button>
+                    </a>
+                </div>
             </div>
+
         </div>
     )
 }
